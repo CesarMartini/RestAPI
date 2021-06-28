@@ -10,7 +10,7 @@ Route::group(['prefix' => 'v1'], function () {
 });
 
 /**
- * Agrupar rotas de api v1 routes sob o diretório Api\v1 nas controllers
+ * Nota: Agrupar rotas de api sob o diretório Api\v1 nas controllers
  */
 Route::group(['prefix' => 'v1', 'namespace' => 'Api\v1'], function () {
     Route::apiResource('/posts', 'PostController');
@@ -19,6 +19,6 @@ Route::group(['prefix' => 'v1', 'namespace' => 'Api\v1'], function () {
     });
 });
 
-Route::get('/ok', function(){
-    return ['status' => true];
+Route::group(['prefix' => 'v1', 'namespace' => 'Api\v1'], function () {
+    Route::apiResource('/dados', 'DadosController');
 });

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Api\v1;
 
-use Auth;
+use Illuminate\Support\Facades\Auth;
 use App\Models\Post;
 use Illuminate\Http\Request;
 use App\Http\Requests\PostRequest;

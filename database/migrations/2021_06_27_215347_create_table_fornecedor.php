@@ -13,7 +13,7 @@ class CreateTableFornecedor extends Migration
      */
     public function up()
     {
-        Schema::create('fornecedor', function (Blueprint $table) {
+        Schema::create('fornecedores', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('cod_fornecedor')->unique();
             $table->string('nome_fornecedor');
@@ -28,6 +28,6 @@ class CreateTableFornecedor extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('fornecedor');
+        Schema::dropIfExists('fornecedores');
     }
 }
