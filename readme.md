@@ -19,7 +19,7 @@ Requisitos Não Funcionais
 - [x] Coloque isso em um repositório GIT
 
 
-## DEPENDÊNCIAS DE USO
+## Dependências de Uso
 ```
     - GIT
     - DOCKER
@@ -27,7 +27,7 @@ Requisitos Não Funcionais
 ```
 
 
-## PASSO A PASSO PARA CONFIGURAÇÃO
+## Passo a Passo para Configuração
 ##### .env
 Copie o conteúdo do arquivo `.env.example` para `.env` file. 
 Edite as configurações de banco de dados para ficarem de acordo com seu ambiente se necessário.
@@ -52,7 +52,7 @@ Rode este comando para carregar a autenticação básica
 Executar o comando final para fazer uma alimentação prévia do banco de dados, que servirá para os testes da aplicação
 ###### `php artisan db:seed`
 
-## PASSO A PASSO PARA EXECUÇÃO
+## Passo a Passo para Execução
 
 > Projeto desenvolvido utilizando Laradock ( Mais informações em https://laradock.io/ )
 
