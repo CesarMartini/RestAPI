@@ -1,9 +1,9 @@
 # REST API
-![GitHub repo size](https://img.shields.io/github/repo-size/iuricode/README-template?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/iuricode/README-template?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/iuricode/README-template?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/CesarMartini/RestAPI?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/CesarMartini/RestAPI?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/CesarMartini/RestAPI?style=for-the-badge)
 
-Uma API desenvolvida em Laravel, de acordo com o desafio disponível em `https://github.com/molacorban/interviews/blob/main/php-challenge/REAME.md`
+Uma API desenvolvida em Laravel, de acordo com o desafio disponível em `(https://github.com/molacorban/interviews/blob/main/php-challenge/REAME.md)`
 
 ### To-do
 
@@ -36,10 +36,10 @@ Edite as configurações de banco de dados para ficarem de acordo com seu ambien
 Por meio de linha de comando, acesse o diretório do projeto e execute o comando de instalação dos pacotes do Composer.
 ###### `composer install`
 
-##### Generar as Chaves
+##### Gerar as Chaves de Ambiente
 Logo após execute o comando para atualização das chaves no arquivo `.env`
 ###### `php artisan key:generate`
-##### Executar a Migration
+##### Executar a Migration 
 A seguir execute o comando abaixo para criar as tabelas no banco
 ###### `php artisan migrate`
 ##### Instalação do Passport
