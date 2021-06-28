@@ -79,8 +79,11 @@ Executar o comando final para fazer uma alimentação prévia do banco de dados,
 
 
 ## EndPoints da API 
+
+##### Auth
+* Login POST `http://localhost:8000/api/v1/login` autentica e gera um Token a partir dos parâmetros de email e senha 
 ##### Users
-* User GET `http://localhost:8000/api/v1/user`
+* User GET `http://localhost:8000/api/v1/user` obtêm a listagem de usuários cadastrados na base no momento
 ##### Dados
 * Dados POST `http://localhost:8000/api/v1/dados` insere os registros na base
 * Dados GET `http://localhost:8000/api/v1/dados` retorna todos os registros
