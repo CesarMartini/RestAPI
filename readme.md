@@ -8,7 +8,7 @@ Uma API desenvolvida em Laravel, de acordo com o desafio disponível em `(https:
 ### To-do
 
 Desenvolvimento de Funcionalidades
-- [ ] End-point de autenticação
+- [x] End-point de autenticação
 - [ ] End-point de submissão de arquivo
 - [x] End-point de consulta aos dados resultantes do processo
 

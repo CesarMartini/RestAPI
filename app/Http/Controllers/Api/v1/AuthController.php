@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Api\v1;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
-use app\Http\Controllers\Api\v1\ResponseController;
+use App\Http\Controllers\Api\v1\ResponseController;
 use App\Models\User;
 
 class AuthController extends ResponseController
@@ -13,6 +13,7 @@ class AuthController extends ResponseController
     
     public function login(Request $request)
     {
+        //return (var_dump($request));
         $validator = Validator::make($request->all(), [
             'email' => 'required|string|email',
             'password' => 'required'
