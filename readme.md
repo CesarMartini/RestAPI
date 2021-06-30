@@ -13,7 +13,7 @@ Desenvolvimento de Funcionalidades
 - [x] End-point de consulta aos dados resultantes do processo
 
 Requisitos Não Funcionais
-- [ ] Cobertura de Testes
+- [ ] Cobertura de Testes (Testes Unitários)
 - [x] Usar PHP 7.4
 - [x] Utilize um ambiente orquestrado com Docker para PHP e Postgres
 - [x] Coloque isso em um repositório GIT
@@ -90,3 +90,9 @@ Executar o comando final para fazer uma alimentação prévia do banco de dados,
 * Dados GET `http://localhost:8000/api/v1/dados/1` retorna apenas o registro com ID informado
 * Dados PUT `http://localhost:8000/api/v1/dados/1` atualiza o registro com ID informado
 * Dados DELETE `http://localhost:8000/api/v1/dados/1` remove o registro com ID informado
+
+#### Testando os Endpoints
+```
+    Utilize a Collection do Postman para fazer o teste dos Endpoints acima Relacionados:
+    Testes_REST_API.postman_collection.json
+```

@@ -1,0 +1,204 @@
+{
+	"info": {
+		"_postman_id": "69890b04-d9c1-4fd4-8f63-bae9e3459c6e",
+		"name": "Testes REST API ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Autenticar (LOGIN) - Guest",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{localhost}}login?email=cesar.martini@live.com&password=12345678",
+					"host": [
+						"{{localhost}}login"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "cesar.martini@live.com"
+						},
+						{
+							"key": "password",
+							"value": "12345678"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lista Usuário por ID (USER) - Guest",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}user?id=1",
+					"host": [
+						"{{localhost}}user"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insere Dados (DADOS)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjYxNGRjNjQxYzBkNzc2NTc0ZDYxMDU1OTM3MmU3YjQ1ZWFlZjk3YzUwMjY0NGE2ZjZkYzRhNDdlMmVkMGE1NmNlMjBlOTUwMWRhMzlkNTBmIn0.eyJhdWQiOiIzIiwianRpIjoiNjE0ZGM2NDFjMGQ3NzY1NzRkNjEwNTU5MzcyZTdiNDVlYWVmOTdjNTAyNjQ0YTZmNmRjNGE0N2UyZWQwYTU2Y2UyMGU5NTAxZGEzOWQ1MGYiLCJpYXQiOjE2MjUwMjExNTksIm5iZiI6MTYyNTAyMTE1OSwiZXhwIjoxNjU2NTU3MTU5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.FtBjYaPp1SKg4f9pq8DsewEcGYAYp3-__0tMm8UWv2hZwlyTVtVWwEI_nDvqIT_McAto8V_4ampvAyMAWN1jUE7UStVRCEgOxHjusNox1E60CwfW3Ugr2bw0D3Rheuc5vE8dTb8iGYHLT8mAAxLJ8MQ99GniausW0tWlwYxZMLrBuwgY5g2K7ZdgVbZRXugRegpT2u1QaysGBrmD3aUQQZ115OcOh2DYlqGYpah6BBpSsoeSZUNgrQ8h0lrhITbtER7ZDCTm3d1jD8C8z8NzZnJfcLu5MbPm-z8clCFYqVFR0ON0uB7UZENl5il7O4gjFos8bSNx_hHPJ481Y2Mt15uluDoWCKeLXasuUktpFKbXvI1QZMvS1ELBnCNI-EWvM70KEQldU7UxK8zRVgx7ZsIgetZxjCBRqDK1eU6woPOfl_JPgSjl7azpFGiVkqdvTVmXYRIo-90GBDYHZKT1XVR1-t6Db7haueQ-q0E1t3-S4Fi7EwrwJWP6xWj1rW009I3GhwS-Rg1a9cUyOzBeAuvfZBlQDfwohkxtps5SKdpEBIqv6a74gpyGHjYsXV7_6LrW_JAVM2LimoNVHPiiR_2upvM1uTjgcT7r0g7qYS6NiP6t-3AK1nYZlYO-kH-OwekNUdtAYMeZq4J7HZKmhB38aptFOC-hvKALwzTrIIw'",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{localhost}}dados",
+					"host": [
+						"{{localhost}}dados"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lista Dados (DADOS)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjYxNGRjNjQxYzBkNzc2NTc0ZDYxMDU1OTM3MmU3YjQ1ZWFlZjk3YzUwMjY0NGE2ZjZkYzRhNDdlMmVkMGE1NmNlMjBlOTUwMWRhMzlkNTBmIn0.eyJhdWQiOiIzIiwianRpIjoiNjE0ZGM2NDFjMGQ3NzY1NzRkNjEwNTU5MzcyZTdiNDVlYWVmOTdjNTAyNjQ0YTZmNmRjNGE0N2UyZWQwYTU2Y2UyMGU5NTAxZGEzOWQ1MGYiLCJpYXQiOjE2MjUwMjExNTksIm5iZiI6MTYyNTAyMTE1OSwiZXhwIjoxNjU2NTU3MTU5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.FtBjYaPp1SKg4f9pq8DsewEcGYAYp3-__0tMm8UWv2hZwlyTVtVWwEI_nDvqIT_McAto8V_4ampvAyMAWN1jUE7UStVRCEgOxHjusNox1E60CwfW3Ugr2bw0D3Rheuc5vE8dTb8iGYHLT8mAAxLJ8MQ99GniausW0tWlwYxZMLrBuwgY5g2K7ZdgVbZRXugRegpT2u1QaysGBrmD3aUQQZ115OcOh2DYlqGYpah6BBpSsoeSZUNgrQ8h0lrhITbtER7ZDCTm3d1jD8C8z8NzZnJfcLu5MbPm-z8clCFYqVFR0ON0uB7UZENl5il7O4gjFos8bSNx_hHPJ481Y2Mt15uluDoWCKeLXasuUktpFKbXvI1QZMvS1ELBnCNI-EWvM70KEQldU7UxK8zRVgx7ZsIgetZxjCBRqDK1eU6woPOfl_JPgSjl7azpFGiVkqdvTVmXYRIo-90GBDYHZKT1XVR1-t6Db7haueQ-q0E1t3-S4Fi7EwrwJWP6xWj1rW009I3GhwS-Rg1a9cUyOzBeAuvfZBlQDfwohkxtps5SKdpEBIqv6a74gpyGHjYsXV7_6LrW_JAVM2LimoNVHPiiR_2upvM1uTjgcT7r0g7qYS6NiP6t-3AK1nYZlYO-kH-OwekNUdtAYMeZq4J7HZKmhB38aptFOC-hvKALwzTrIIw'",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{localhost}}dados",
+					"host": [
+						"{{localhost}}dados"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lista Dados por ID (DADOS)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjYxNGRjNjQxYzBkNzc2NTc0ZDYxMDU1OTM3MmU3YjQ1ZWFlZjk3YzUwMjY0NGE2ZjZkYzRhNDdlMmVkMGE1NmNlMjBlOTUwMWRhMzlkNTBmIn0.eyJhdWQiOiIzIiwianRpIjoiNjE0ZGM2NDFjMGQ3NzY1NzRkNjEwNTU5MzcyZTdiNDVlYWVmOTdjNTAyNjQ0YTZmNmRjNGE0N2UyZWQwYTU2Y2UyMGU5NTAxZGEzOWQ1MGYiLCJpYXQiOjE2MjUwMjExNTksIm5iZiI6MTYyNTAyMTE1OSwiZXhwIjoxNjU2NTU3MTU5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.FtBjYaPp1SKg4f9pq8DsewEcGYAYp3-__0tMm8UWv2hZwlyTVtVWwEI_nDvqIT_McAto8V_4ampvAyMAWN1jUE7UStVRCEgOxHjusNox1E60CwfW3Ugr2bw0D3Rheuc5vE8dTb8iGYHLT8mAAxLJ8MQ99GniausW0tWlwYxZMLrBuwgY5g2K7ZdgVbZRXugRegpT2u1QaysGBrmD3aUQQZ115OcOh2DYlqGYpah6BBpSsoeSZUNgrQ8h0lrhITbtER7ZDCTm3d1jD8C8z8NzZnJfcLu5MbPm-z8clCFYqVFR0ON0uB7UZENl5il7O4gjFos8bSNx_hHPJ481Y2Mt15uluDoWCKeLXasuUktpFKbXvI1QZMvS1ELBnCNI-EWvM70KEQldU7UxK8zRVgx7ZsIgetZxjCBRqDK1eU6woPOfl_JPgSjl7azpFGiVkqdvTVmXYRIo-90GBDYHZKT1XVR1-t6Db7haueQ-q0E1t3-S4Fi7EwrwJWP6xWj1rW009I3GhwS-Rg1a9cUyOzBeAuvfZBlQDfwohkxtps5SKdpEBIqv6a74gpyGHjYsXV7_6LrW_JAVM2LimoNVHPiiR_2upvM1uTjgcT7r0g7qYS6NiP6t-3AK1nYZlYO-kH-OwekNUdtAYMeZq4J7HZKmhB38aptFOC-hvKALwzTrIIw'",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{localhost}}dados",
+					"host": [
+						"{{localhost}}dados"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualiza Dados por ID (DADOS)",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjYxNGRjNjQxYzBkNzc2NTc0ZDYxMDU1OTM3MmU3YjQ1ZWFlZjk3YzUwMjY0NGE2ZjZkYzRhNDdlMmVkMGE1NmNlMjBlOTUwMWRhMzlkNTBmIn0.eyJhdWQiOiIzIiwianRpIjoiNjE0ZGM2NDFjMGQ3NzY1NzRkNjEwNTU5MzcyZTdiNDVlYWVmOTdjNTAyNjQ0YTZmNmRjNGE0N2UyZWQwYTU2Y2UyMGU5NTAxZGEzOWQ1MGYiLCJpYXQiOjE2MjUwMjExNTksIm5iZiI6MTYyNTAyMTE1OSwiZXhwIjoxNjU2NTU3MTU5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.FtBjYaPp1SKg4f9pq8DsewEcGYAYp3-__0tMm8UWv2hZwlyTVtVWwEI_nDvqIT_McAto8V_4ampvAyMAWN1jUE7UStVRCEgOxHjusNox1E60CwfW3Ugr2bw0D3Rheuc5vE8dTb8iGYHLT8mAAxLJ8MQ99GniausW0tWlwYxZMLrBuwgY5g2K7ZdgVbZRXugRegpT2u1QaysGBrmD3aUQQZ115OcOh2DYlqGYpah6BBpSsoeSZUNgrQ8h0lrhITbtER7ZDCTm3d1jD8C8z8NzZnJfcLu5MbPm-z8clCFYqVFR0ON0uB7UZENl5il7O4gjFos8bSNx_hHPJ481Y2Mt15uluDoWCKeLXasuUktpFKbXvI1QZMvS1ELBnCNI-EWvM70KEQldU7UxK8zRVgx7ZsIgetZxjCBRqDK1eU6woPOfl_JPgSjl7azpFGiVkqdvTVmXYRIo-90GBDYHZKT1XVR1-t6Db7haueQ-q0E1t3-S4Fi7EwrwJWP6xWj1rW009I3GhwS-Rg1a9cUyOzBeAuvfZBlQDfwohkxtps5SKdpEBIqv6a74gpyGHjYsXV7_6LrW_JAVM2LimoNVHPiiR_2upvM1uTjgcT7r0g7qYS6NiP6t-3AK1nYZlYO-kH-OwekNUdtAYMeZq4J7HZKmhB38aptFOC-hvKALwzTrIIw'",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{localhost}}dados",
+					"host": [
+						"{{localhost}}dados"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deleta Dados por ID (DADOS)",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjYxNGRjNjQxYzBkNzc2NTc0ZDYxMDU1OTM3MmU3YjQ1ZWFlZjk3YzUwMjY0NGE2ZjZkYzRhNDdlMmVkMGE1NmNlMjBlOTUwMWRhMzlkNTBmIn0.eyJhdWQiOiIzIiwianRpIjoiNjE0ZGM2NDFjMGQ3NzY1NzRkNjEwNTU5MzcyZTdiNDVlYWVmOTdjNTAyNjQ0YTZmNmRjNGE0N2UyZWQwYTU2Y2UyMGU5NTAxZGEzOWQ1MGYiLCJpYXQiOjE2MjUwMjExNTksIm5iZiI6MTYyNTAyMTE1OSwiZXhwIjoxNjU2NTU3MTU5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.FtBjYaPp1SKg4f9pq8DsewEcGYAYp3-__0tMm8UWv2hZwlyTVtVWwEI_nDvqIT_McAto8V_4ampvAyMAWN1jUE7UStVRCEgOxHjusNox1E60CwfW3Ugr2bw0D3Rheuc5vE8dTb8iGYHLT8mAAxLJ8MQ99GniausW0tWlwYxZMLrBuwgY5g2K7ZdgVbZRXugRegpT2u1QaysGBrmD3aUQQZ115OcOh2DYlqGYpah6BBpSsoeSZUNgrQ8h0lrhITbtER7ZDCTm3d1jD8C8z8NzZnJfcLu5MbPm-z8clCFYqVFR0ON0uB7UZENl5il7O4gjFos8bSNx_hHPJ481Y2Mt15uluDoWCKeLXasuUktpFKbXvI1QZMvS1ELBnCNI-EWvM70KEQldU7UxK8zRVgx7ZsIgetZxjCBRqDK1eU6woPOfl_JPgSjl7azpFGiVkqdvTVmXYRIo-90GBDYHZKT1XVR1-t6Db7haueQ-q0E1t3-S4Fi7EwrwJWP6xWj1rW009I3GhwS-Rg1a9cUyOzBeAuvfZBlQDfwohkxtps5SKdpEBIqv6a74gpyGHjYsXV7_6LrW_JAVM2LimoNVHPiiR_2upvM1uTjgcT7r0g7qYS6NiP6t-3AK1nYZlYO-kH-OwekNUdtAYMeZq4J7HZKmhB38aptFOC-hvKALwzTrIIw'",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{localhost}}dados",
+					"host": [
+						"{{localhost}}dados"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "localhost",
+			"value": "http://localhost:8000/api/v1/"
+		}
+	]
+}

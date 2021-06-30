@@ -13,7 +13,6 @@ class AuthController extends ResponseController
     
     public function login(Request $request)
     {
-        //return (var_dump($request));
         $validator = Validator::make($request->all(), [
             'email' => 'required|string|email',
             'password' => 'required'
@@ -32,5 +31,17 @@ class AuthController extends ResponseController
         $user = $request->user();
         $success['token'] =  $user->createToken('token')->accessToken;
         return $this->sendResponse($success);
+    }
+
+    public function getUser(Request $request)
+    {
+        $user = $request->user();
+        if($user){
+            return $this->sendResponse($user);
+        }
+        else{
+            $error = "user not found";
+            return $this->sendResponse($error);
+        }
     }
 }
