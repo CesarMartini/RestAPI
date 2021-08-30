@@ -4,7 +4,7 @@
 ![GitHub issues-pr](https://img.shields.io/github/issues-pr/CesarMartini/RestAPI?style=for-the-badge)
 ![GitHub forks](https://img.shields.io/github/forks/CesarMartini/RestAPI?style=for-the-badge)
 
-Uma API desenvolvida em Laravel, de acordo com o desafio disponível em `(https://github.com/molacorban/interviews/blob/main/php-challenge/REAME.md)`
+Uma API REST desenvolvida em Laravel
 
 ### To-do
 
